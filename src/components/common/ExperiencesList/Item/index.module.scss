@@ -1,0 +1,76 @@
+.item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: 300ms all;
+
+  &:hover {
+    background: #f1f1f1;
+  }
+
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  .imageWrapper {
+    background: blue;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 4px 4px 0 #0000000A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+
+    img {
+
+    }
+  }
+
+  .content {
+    margin-left: 10px;
+    position: relative;
+    width: calc(100% - 80px);
+    padding-right: 20px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -10px;
+      background-image: url("/static/images/icons/right-arrow.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 12px;
+      height: 20px;
+    }
+
+    .title {
+      font-family: Manrope, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: #414047;
+    }
+    .description {
+      font-family: Manrope, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      color: #6F6E73;
+    }
+    .usersCount {
+      font-family: Manrope, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 22px;
+      color: #587BE0;
+    }
+  }
+}

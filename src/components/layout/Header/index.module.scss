@@ -1,0 +1,40 @@
+.header {
+  height: 70px;
+  padding: 13px 10px;
+  background: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #DFDFE0;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+
+  .iconsGroup {
+    display: flex;
+    align-items: center;
+  }
+
+  .headerIcons {
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 10px;
+
+    &.backIcon {
+      background-image: url("./assets/back.svg");
+    }
+    &.homeIcon {
+      background-image: url("./assets/home.svg");
+    }
+    &.notificationIcon {
+      background-image: url("./assets/notification.svg");
+    }
+    &.settingsIcon {
+      background-image: url("./assets/settings.svg");
+    }
+  }
+}

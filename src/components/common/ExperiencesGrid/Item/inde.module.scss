@@ -1,0 +1,45 @@
+.item {
+  border-radius: 6px;
+  padding: 12px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+
+  .imageWrapper {
+    margin-bottom: 16px;
+    width: 35px;
+    height: 35px;border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .imageItem {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .title {
+    position: relative;
+    font-family: Manrope, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(51, 55, 59, 0.7);
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -10px;
+      background-image: url("/static/images/icons/right-arrow.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 12px;
+      height: 20px;
+    }
+  }
+}
