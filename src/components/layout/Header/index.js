@@ -5,6 +5,8 @@ import style from "./index.module.scss";
 
 const Header = () => {
   return (
+    <>
+      <div className={style.headerSpacer} />
     <header className={style.header}>
       <div className={style.iconsGroup}>
         <Link href="/">
@@ -24,6 +26,7 @@ const Header = () => {
         </Link>
       </div>
     </header>
+      </>
   );
 };
 

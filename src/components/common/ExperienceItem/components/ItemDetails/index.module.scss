@@ -1,0 +1,30 @@
+.itemDetails {
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+
+  .title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.154px;
+    color: #414047;
+  }
+
+  .description {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #414047;
+    margin-top: 20px;
+  }
+
+  .urlWrapper {
+    margin-top: 23px;
+    a {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+      color: #587BE0;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.experienceItem {
+
+  .experienceItemTabs {
+    display: flex;
+    border-bottom: 1px solid #DFDFE0;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      flex: 1;
+      font-family: Manrope, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: -0.154px;
+      color: #33373B;
+      border-bottom: 3px solid transparent;
+      padding-bottom: 9px;
+      cursor: pointer;
+
+      &.activeTab {
+        border-bottom-color: #33373B;
+      }
+    }
+  }
+
+  .experienceItemTabsComponent {
+    padding: 19px 21px;
+  }
+}

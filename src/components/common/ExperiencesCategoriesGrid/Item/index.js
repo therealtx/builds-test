@@ -12,8 +12,8 @@ const Item = ({
                 imageBackground
               }) => {
   return (
-    <Link href={path}>
-      <div
+    <Link href={path} passHref>
+      <a
         className={styles.item}
         style={{
           backgroundColor
@@ -26,14 +26,14 @@ const Item = ({
           }}
         >
           <div className={styles.imageItem}>
-            <Image src={imagePath} alt={title} width={20} height={20} />
+            <Image src={imagePath} alt={title} width={20} height={20}/>
           </div>
         </div>
 
         <div className={styles.title}>
           {title}
         </div>
-      </div>
+      </a>
     </Link>
   );
 }

@@ -2,14 +2,13 @@ import Head from 'next/head'
 import Header from "components/layout/Header";
 import SearchBar from "components/common/SearchBar";
 import ExperiencesList from "components/common/ExperiencesList";
-import ExperiencesGrid from "components/common/ExperiencesGrid";
+import ExperiencesCategoriesGrid from "components/common/ExperiencesCategoriesGrid";
 
-import recentExperiences from "testData/recent-experiences";
-import popularExperiences from "testData/popular-experiences";
+import experiences, { experiencesItems } from "testData/experiences";
 
-export default function RecentExperiences() {
+export default function Index() {
   return (
-    <div>
+    <>
       <Head>
         <title>Recent Experiences - Builds Test Project</title>
         <link rel="icon" href="/favicon.ico" />
@@ -22,18 +21,18 @@ export default function RecentExperiences() {
 
         <ExperiencesList
           title="Recent Experiences"
-          items={recentExperiences}
+          items={experiencesItems}
         />
-        <ExperiencesGrid
+        <ExperiencesCategoriesGrid
           title="Popular Categories"
-          items={popularExperiences}
+          items={experiences}
         />
         <ExperiencesList
           seeAllUrl="/experiences"
           title="Trending Experiences"
-          items={recentExperiences}
+          items={experiencesItems}
         />
       </main>
-    </div>
+    </>
   )
 }

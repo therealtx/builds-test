@@ -14,7 +14,7 @@
       left: 12px;
       top: 50%;
       margin-top: -8px;
-      background-image: url("/static/images/icons/search.svg");
+      background-image: url("/public/static/images/icons/search.svg");
       background-size: contain;
       background-repeat: no-repeat;
       width: 16px;
@@ -52,7 +52,7 @@
 
   .filterIcon {
     margin-left: 10px;
-    background-image: url("/static/images/icons/filter.svg");
+    background-image: url("/public/static/images/icons/filter.svg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 24px;

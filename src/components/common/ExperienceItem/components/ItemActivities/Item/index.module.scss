@@ -1,0 +1,38 @@
+.singleActivity {
+  display: flex;
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+
+  &:not(:first-child) {
+    margin-top: 17px;
+  }
+
+  .avatarWrapper {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+    margin-right: 17px;
+  }
+
+  .content {
+    .description {
+      font-size: 15px;
+      line-height: 20px;
+      color: #33373B;
+
+      .userName {
+        color: #885FFF;
+      }
+    }
+
+    .date {
+      font-size: 13px;
+      line-height: 18px;
+      color: #6F6E73;
+      margin-top: 5px;
+    }
+  }
+}
